@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/app:/app/app
+      - ./src/composer.json:/app/composer.json
+      - ./src/server.php:/app/server.php
+      - ./src/serviceContainer.php:/app/serviceContainer.php
+    ports:
+      - "1111:9501"
+    command: ["server.php"]
+    network_mode: "bridge"
