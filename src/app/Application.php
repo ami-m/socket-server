@@ -9,6 +9,13 @@ use App\Services\Menu\Menu;
 use App\Services\Pinger\Pinger;
 use App\Services\Searcher\Searcher;
 
+/**
+ * Class Application
+ * @package App
+ *
+ * Each worker process holds one instance of this class.
+ * This class is responsible for understanding client commands, and dispatching them to the appropriate services.
+ */
 class Application
 {
     private const CMD_HD_SPACE = '1';

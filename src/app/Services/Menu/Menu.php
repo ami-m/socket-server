@@ -3,9 +3,17 @@
 
 namespace App\Services\Menu;
 
-
+/**
+ * Class Menu
+ * @package App\Services\Menu
+ *
+ * Responsible for user interface rendering
+ */
 class Menu
 {
+    /**
+     * @return string
+     */
     public function getGreeting(): string
     {
         $res = "\n---------------\n";
@@ -14,6 +22,9 @@ class Menu
         return $res;
     }
 
+    /**
+     * @return string
+     */
     public function getOptions(): string
     {
         $res = "\n";
