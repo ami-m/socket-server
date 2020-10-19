@@ -33,6 +33,15 @@ Escape character is '^]'.
 
 Enter:
 ```
+
+## What's missing
+
+- testing would be nice
+- separating the pinging to a different process (maybe even to it's own container)
+- better logging
+- monitoring for the server state
+- cleaner session termination
+
 ## Author
 [Ami Malimovka](mailto:ami.malimovka@gmail.com)
 
